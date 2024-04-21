@@ -1,0 +1,28 @@
+▪️Step 1 :
+
+sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && sudo apt update && sudo apt install -y docker-ce && sudo systemctl start docker && sudo systemctl enable docker
+
+
+▪️Step 2 :
+
+cd $HOME && wget https://pingpong-build.s3.ap-southeast-1.amazonaws.com/linux/latest/PINGPONG && chmod +x PINGPONG
+
+
+▪️Step 3 :
+
+screen -S pingpong
+
+▪️Step 4 :
+
+https://harvester.pingpong.build/devices
+
+▪️Step 5 : 
+
+./PINGPONG --key your_device_id
+
+
+Done cek your status di akun mu harusnya dah jalan
+
+Tambah Comend diVps
+➖️ Untuk Kluar dari screen : CTRL a+d
+➖️ Untuk Liat Mining jalan : screen -R pingpong
